@@ -6,9 +6,18 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		540F5E121CB6B18A00D53769 /* DemoColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540F5E111CB6B18A00D53769 /* DemoColorPicker.swift */; };
+		540F5E151CB7B4B000D53769 /* ToolbarIcon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 540F5E141CB7B4B000D53769 /* ToolbarIcon.tiff */; };
+		540F5E171CB7C31100D53769 /* DemoColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540F5E161CB7C31100D53769 /* DemoColorPickerViewController.xib */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		540F5E051CB6B08F00D53769 /* DemoColorPicker.colorPicker */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoColorPicker.colorPicker; sourceTree = BUILT_PRODUCTS_DIR; };
 		540F5E081CB6B08F00D53769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540F5E111CB6B18A00D53769 /* DemoColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoColorPicker.swift; sourceTree = "<group>"; };
+		540F5E141CB7B4B000D53769 /* ToolbarIcon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ToolbarIcon.tiff; sourceTree = "<group>"; };
+		540F5E161CB7C31100D53769 /* DemoColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoColorPickerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +51,9 @@
 			isa = PBXGroup;
 			children = (
 				540F5E081CB6B08F00D53769 /* Info.plist */,
+				540F5E111CB6B18A00D53769 /* DemoColorPicker.swift */,
+				540F5E141CB7B4B000D53769 /* ToolbarIcon.tiff */,
+				540F5E161CB7C31100D53769 /* DemoColorPickerViewController.xib */,
 			);
 			path = DemoColorPicker;
 			sourceTree = "<group>";
@@ -102,6 +114,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540F5E151CB7B4B000D53769 /* ToolbarIcon.tiff in Resources */,
+				540F5E171CB7C31100D53769 /* DemoColorPickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540F5E121CB6B18A00D53769 /* DemoColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,12 +217,16 @@
 		540F5E0C1CB6B08F00D53769 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DemoColorPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macoscope.DemoColorPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = colorPicker;
 			};
 			name = Debug;
@@ -215,9 +234,12 @@
 		540F5E0D1CB6B08F00D53769 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = DemoColorPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macoscope.DemoColorPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -244,6 +266,7 @@
 				540F5E0D1CB6B08F00D53769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
