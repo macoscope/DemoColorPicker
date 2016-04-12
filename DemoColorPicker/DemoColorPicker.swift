@@ -12,7 +12,7 @@ import AppKit
 
 public class DemoColorPicker: NSColorPicker, NSColorPickingCustom {
     
-    private let bundle = NSBundle(identifier: "com.macoscope.DemoColorPicker")!
+    private let bundle = NSBundle(forClass: DemoColorPicker.self)
     
     @IBOutlet weak var pickerView: NSView!
     @IBOutlet weak var selectedColorRenderingView: NSView!
@@ -59,7 +59,7 @@ public class DemoColorPicker: NSColorPicker, NSColorPickingCustom {
     
     private func renderColor(color: NSColor) {
         selectedColorRenderingView.wantsLayer = true
-        selectedColorRenderingView.layer!.backgroundColor = color.CGColor
+        selectedColorRenderingView.layer?.backgroundColor = color.CGColor
         selectedColorValueLabel.stringValue = "color: \(color)"
     }
 }
